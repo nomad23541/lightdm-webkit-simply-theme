@@ -1,0 +1,6 @@
+[theme]
+name=simply
+description=simply a simple theme
+engine=lightdm-webkit-greeter
+url=index.html
+session=openbox

@@ -1,0 +1,139 @@
+/** Define Fonts **/
+@font-face {
+  font-family: opensans;
+  src: url('font/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: opensans-light;
+  src: url('font/OpenSans-Light.ttf');
+}
+
+* {
+  font-family: opensans;
+}
+
+body {
+  background: url("img/background.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+  color: white;
+  font-size: 10pt;
+}
+
+body, span, div, img {
+  -webkit-user-select: none;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  background: transparent;
+  color: white;
+}
+
+.smooth {
+  -webkit-transition: visibility 0s, opacity 0.3s, left 0.4s;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-delay: 0.3s, 0s, 0s;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  text-align: center;
+}
+
+.footer, .header {
+  width: 100%;
+}
+
+.login_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.login_container {
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.time {
+  font-size: 38pt;
+  font-family: opensans-light;
+}
+
+#message {
+  margin: 0;
+  height: 20px;
+  -webkit-transition: visibility 0s, opacity 0.3s, height 0.3s;
+}
+
+#message.hidden {
+  height: 0px;
+}
+
+#message_content {
+  text-align: left;
+}
+
+#message_content.error {
+  color: #e74c3c;
+}
+
+.user {
+  margin: 15px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.user_name {
+  font-family: opensans-light;
+  font-size: 20pt;
+}
+
+.action {
+  display: inline-block;
+  width: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+  transition: 0.1s ease-out;
+}
+
+.action_image {
+  height: 30px;
+  width: 30px;
+
+  margin-bottom: 5px;
+}
+
+.action:hover {
+  opacity: 0.5;
+}
