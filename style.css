@@ -36,6 +36,10 @@ input {
   color: white;
 }
 
+input:selected {
+  outline: none;
+}
+
 .smooth {
   -webkit-transition: visibility 0s, opacity 0.3s, left 0.4s;
 }
